@@ -13,11 +13,12 @@ void main() {
   */
 
   // * quick fix
+  // ! deprecated member use 'IntegerDivisionByZeroException', replaced with 'UnsupportedError'
   try {
     var a = 7;
     var b = 0;
     print(a~/b);
-  } on IntegerDivisionByZeroException {
+  } on UnsupportedError {
     print('Can not divide by zero.');
   }
 
